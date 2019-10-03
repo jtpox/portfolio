@@ -12,7 +12,7 @@
     padding: 20px;
 }
 
-.col-full {
+.col-full, .col-gallery {
     height: 100%;
 }
 
@@ -26,7 +26,7 @@
  * Page Splashes
  */
 
-.col-full > .darken {
+.col-full > .darken, .col-gallery > .darken {
     background: rgba(0, 0, 0, 0.4);
     height: 100%;
     width: 100%;
@@ -37,7 +37,7 @@
     padding: 20px;
 }
 
-.col-full > .darken > .content {
+.col-full > .darken > .content, .col-gallery > .darken > .content {
     height: auto;
     width: 100%;
     /* Position */
@@ -58,17 +58,17 @@
 }
 
 /* Keyboards */
-.col-full.tokyo60 {
+.col-gallery.tokyo60 {
     background: url('../img/holypanda_tokyo60.jpg');
     background-size: cover;
 }
 
-.col-full.zilent-mistel {
+.col-gallery.zilent-mistel {
     background: url('../img/zilent_mistel.jpg');
     background-size: cover;
 }
 
-.col-full.alps-5deg {
+.col-gallery.alps-5deg {
     background: url('../img/alps_5deg.jpg');
     background-size: cover;
 }
