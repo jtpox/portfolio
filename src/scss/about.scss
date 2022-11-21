@@ -1,0 +1,39 @@
+@import "functions";
+@import "variables";
+@import "mixins";
+
+.about-wrapper {
+    display: flex;
+    align-content: stretch;
+    height: 100%;
+}
+
+.about-wrapper > .page-image {
+    background: url('assets/img/about.jpg');
+    background-color: $gray-700;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+}
+
+.about-wrapper > .page-content {
+    height: 100%;
+    overflow: auto;
+    /* Margin & Padding */
+    padding-top: 60px;
+}
+
+@include media-breakpoint-down(md) {
+    .about-wrapper {
+        flex-direction: column;
+    }
+
+    .about-wrapper > .page-image {
+        background-color: $gray-800;
+        /* display: none; */
+        height: 60px;
+        width: 100%;
+    }
+}
